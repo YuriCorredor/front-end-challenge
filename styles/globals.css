@@ -1,5 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
+  background-color: #E5E5E5;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -13,4 +19,17 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.scrollbar-cast::-webkit-scrollbar {
+  height: 0.65rem;
+}
+
+.scrollbar-cast::-webkit-scrollbar-track {
+  background: #DDDDDD
+}
+
+.scrollbar-cast::-webkit-scrollbar-thumb {
+  background-color: #ADADAD;
+  border-radius: 10rem;
 }
