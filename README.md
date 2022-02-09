@@ -15,7 +15,7 @@
                 Otimização de imagens
             </li>
             <li>
-                Otimização aprimorada para mecanismos de pesquisa de forma fácil
+                Otimização aprimorada para mecanismos de pesquisa de forma fácil (SEO)
             </li>
             <li>
                 Usabilidade imediata de rotas
@@ -32,7 +32,7 @@
                 Tamanho consistente dos arquivos .css
             </li>
             <li>
-                Não precisa nomear classes 🙏🙏🙏
+                Não precisa nomear classes 🙏
             </li>
         </ul>
     </li>
@@ -45,15 +45,15 @@
 
 <p>Este projeto usa, como banco de dados, a API TMDB.</p>
 
-Portanto, antes de continuar com o processo, crie sua chave [clicando aqui](https://developers.themoviedb.org/4/getting-started/authorization) e seguindo as instruções no site.
+Portanto, antes de continuar com o processo, crie sua chave [clicando aqui](https://developers.themoviedb.org/3/getting-started/introduction) e seguindo as instruções no site.
 
 <br>
 
-<p>Clone o projeto.</p>
 
 ```bash
-# Após clonar o projeto
+git clone https://github.com/YuriCorredor/front-end-challenge.git
 cd front-end-challenge
+# instale as dependências
 npm install
 ```
 
