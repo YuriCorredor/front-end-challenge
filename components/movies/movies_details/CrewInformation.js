@@ -14,7 +14,7 @@ export default function CrewInformation({ crew }) {
     }
 
     return (
-        <div className='flex flex-wrap mt-8 mb-4 sm:ml-0 sm:mr-16 md:mr-0 text-white'>
+        <div className='flex flex-wrap mt-8 mb-4 ml-2 sm:ml-0 sm:mr-16 md:mr-0 text-white'>
             {getCrewInfoToDisplay(crew.crew).flatMap((member, index) => {
                 if (index >= 5) return []
                 else return (
