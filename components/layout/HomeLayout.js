@@ -2,7 +2,7 @@ import GenreItem from './GenreItem'
 
 export default function HomeLayout({ children, genres, filters }) {
 
-    if(!genres | genres.length === 0) return <></>
+    if(!genres) return <></>
 
     return (
         <>
