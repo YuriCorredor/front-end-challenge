@@ -1,6 +1,9 @@
 import GenreItem from './GenreItem'
 
 export default function HomeLayout({ children, genres, filters }) {
+
+    if(!genres | genres.length === 0) return <></>
+
     return (
         <>
         <div className='bg-[#2D0C5E] pb-3 mb-5'>

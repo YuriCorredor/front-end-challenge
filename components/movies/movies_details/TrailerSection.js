@@ -1,7 +1,6 @@
 export default function TrailerSection({ videos }) {
 
     if (!videos) return <></>
-    if (!videos.success) return <></>
 
     const getVideoSrc = videos => {
         let src = ''
