@@ -76,3 +76,10 @@ npm run dev
 # ou
 yarn dev
 ```
+
+<br>
+<br>
+
+<h1>Visão geral do aplicativo</h1>
+
+![APP-OVERVIEW](/readme/1.gif)
