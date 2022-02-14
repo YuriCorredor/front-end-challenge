@@ -24,23 +24,7 @@ export default function moviePages(props) {
     )
 }
 
-export function getStaticPaths() {
-    const arrayOfPaths = Array.apply(null, Array(500)).map((_, index) => { //Numbers to provide to paths. Numbers between (1, 500)
-        const number = index+1
-        return {
-            params: {
-                pageNumber: number.toString()
-            }
-        }
-    })
-
-    return {
-        fallback: false,
-        paths: arrayOfPaths
-    }
-}
-
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
     const pageNumber = context.params.pageNumber
     const API_KEY = process.env.API_KEY
     
@@ -57,7 +41,6 @@ export async function getStaticProps(context) {
             movies: moviesJson,
             genres: genresJson,
             pageNumber
-        },
-        revalidate: 86400 // it's going to update every 1 day
+        }
     }
 }
