@@ -67,7 +67,9 @@ export default function MovieInformation({ movie, releaseDates }) {
             if (isNaN(parseInt(usCertification)) && usCertification) return usCertification
             return usCertification ? (usCertification + ' anos') : ''
         }
-        const randomCetification = releaseDates[0].release_dates[0].certification
+        const randomCetification = releaseDates[0]?.release_dates[0]?.certification
+
+        console.log(randomCetification === undefined)
         return randomCetification
 
     }
@@ -76,7 +78,7 @@ export default function MovieInformation({ movie, releaseDates }) {
         <>
             <h1 className='text-white font-bold text-xl mx-2 sm:mx-0 text-[32px]'>{movie.title} ({getYear(movie.release_date)})</h1>
             <ul className='flex flex-wrap mx-2 sm:mx-0 my-2 flex-col sm:flex-row'>
-                <li className={`text-white font-roboto pr-1 pl-0 sm:after:content-['•'] after:relative sm:after:w-2 after:ml-2 ${getAgeRestriction(releaseDates) == '' ? 'hidden' : ''}`}>{getAgeRestriction(releaseDates)}</li>
+                <li className={`text-white font-roboto pr-1 pl-0 sm:after:content-['•'] after:relative sm:after:w-2 after:ml-2 ${getAgeRestriction(releaseDates) == '' | getAgeRestriction(releaseDates) === undefined  ? 'hidden' : ''}`}>{getAgeRestriction(releaseDates)}</li>
                 <li className={`text-white font-roboto pr-1 pl-0 sm:after:content-['•'] after:relative sm:after:w-2 after:ml-2 ${getPrettifiedReleaseDate(movie.release_date) == '' ? 'hidden' : ''}`}>{getPrettifiedReleaseDate(movie.release_date)}</li>
                 <li className={`text-white font-roboto pr-1 pl-0 sm:after:content-['•'] after:relative sm:after:w-2 after:ml-2 ${getGenres(movie.genres) == '' ? 'hidden' : ''}`}>{getGenres(movie.genres)}</li>
                 <li className={`text-white font-roboto pr-1 pl-0 ${getPrettifiedRunTime(movie.runtime) == '' ? 'hidden' : ''}`}>{getPrettifiedRunTime(movie.runtime)}</li>
