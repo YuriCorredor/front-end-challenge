@@ -82,4 +82,6 @@ yarn dev
 
 <h1>Visão geral do aplicativo</h1>
 
+Visite o site [AQUI](https://front-end-challenge-41v66zh02-yuricorredor.vercel.app/).
+
 ![APP-OVERVIEW](/readme/1.gif)
