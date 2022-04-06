@@ -51,7 +51,7 @@ Portanto, antes de continuar com o processo, crie sua chave [clicando aqui](http
 
 
 ```bash
-git clone https://github.com/YuriCorredor/front-end-challenge.git
+https://github.com/YuriCorredor/search-top-movies.git
 cd front-end-challenge
 # instale as dependências
 npm install
@@ -82,6 +82,6 @@ yarn dev
 
 <h1>Visão geral do aplicativo</h1>
 
-Visite o site [AQUI](https://front-end-challenge-41v66zh02-yuricorredor.vercel.app/).
+Visite o site [AQUI](https://front-end-challenge-lac.vercel.app/).
 
 ![APP-OVERVIEW](/readme/1.gif)
