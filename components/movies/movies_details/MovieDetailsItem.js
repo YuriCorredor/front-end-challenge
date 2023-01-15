@@ -14,7 +14,7 @@ export default function MovieDetailsItem({ movie, releaseDates, crew, videos, re
                 <MoviePoster src={movie.poster_path} />
                 <div className='flex sm:w-full flex-col sm:pt-16 pt-6'>
                     <MovieInformation movie={movie} releaseDates={releaseDates} />
-                    <MovieConsensus score={parseFloat(movie.vote_average)} />
+                    <MovieConsensus score={parseFloat(movie.vote_average).toFixed(2)} />
                     <MovieSynopsis movieSynopsis={movie.overview} />
                     <CrewInformation crew={crew} />
                 </div>

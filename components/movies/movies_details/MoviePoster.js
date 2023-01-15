@@ -8,12 +8,12 @@ export default function MoviePoster({ src }) {
 
     useEffect(() => {
         setSrcPoster(`https://www.themoviedb.org/t/p/w600_and_h900_bestv2/${src}`)
-    }, [src]);
-    
+    }, [src])
 
     return (
         <div className='px-8 sm:px-16 stick mt-12 sm:mt-0 sm:relative static sm:max-w-fit sm:max-h-fit max-w-[350px] max-h-[500px] top-16 left-0'>
             <Image
+                alt="Movie Poster"
                 onError={() => setSrcPoster(moviePlaceholder)}
                 className='shadow-xl rounded-lg' 
                 width={600} 
